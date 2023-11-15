@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.coffee_shop_app"
+    namespace "com.shopee_t"
     defaultConfig {
-        applicationId "com.coffee_shop_app"
+        applicationId "com.shopee_t"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
