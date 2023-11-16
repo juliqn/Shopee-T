@@ -1,15 +1,3 @@
-# 📱 Build a Coffee Shop App using React Native ☕| Beginner | 2023
-
-![Coffee Shop App](https://i.ytimg.com/vi/W1Co2M-gsQE/maxresdefault.jpg)
-
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=W1Co2M-gsQE)
-
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
-
-# Getting Started
-
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
-
 ## Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
