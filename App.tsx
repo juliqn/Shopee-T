@@ -24,7 +24,7 @@ const App = () => {
         <Stack.Screen name={"SingUp"} component={ SingUpScreen}/>
         <Stack.Screen name={"SingIn"} component={ SingInScreen }/>
         <Stack.Screen name={"Password"} component={PasswordScreen}/>
-        <Stack.Screen name={"HomeScreen"} component={HomeScreen}/>
+        {/* <Stack.Screen name={"HomeScreen"} component={HomeScreen}/> */}
         <Stack.Screen
           name="Tab"
           component={TabNavigator}
