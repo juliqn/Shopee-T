@@ -1,4 +1,4 @@
-package com.coffee_shop_app;
+package com.shopee_t;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
