@@ -70,7 +70,7 @@ export default function SingInScreen(){
                     <Checkbox checked={isChecked}/>
                     <Text style={styles.text_pass}>Forgot password?</Text>  
                 </View>
-                    <ButtonComp onPress={logIn()} buttonStyle={styles.btn_Up} textStyle={styles.text_Up} buttonText='Sign In'/>
+                    <ButtonComp onPress={logIn} buttonStyle={styles.btn_Up} textStyle={styles.text_Up} buttonText='Sign In'/>
                     <Text style={styles.text_social}>Or sign up with</Text>
                 <View style={styles.containerDouble}>
                     <ButtonImgComp imgStyle={styles.icon_social} source={icon_facebook} onPress={goToBack} buttonStyle={styles.btn_social}/>
