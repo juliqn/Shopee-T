@@ -30,7 +30,7 @@ const OrderItemCard: React.FC<OrderItemCardProps> = ({
     <LinearGradient
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}
-      colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}
+      colors={[COLORS.primaryOrangeHex, COLORS.primaryBlackHex]}
       style={styles.CardLinearGradient}>
       <View style={styles.CardInfoContainer}>
         <View style={styles.CardImageInfoContainer}>

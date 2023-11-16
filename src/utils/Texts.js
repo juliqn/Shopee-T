@@ -1,0 +1,19 @@
+
+export const title_home = "Template";
+export const btn_Up = "SingUp";
+export const btn_In = "Sign In";
+export const name = "Name";
+export const email = "Email";
+export const password = "Password";
+export const info = "Or sign up with";
+export const alreadyAccount = "Already have an account? Sign In";
+export const not_account = "Don’t have an account? Sign Up";
+export const info_SingIn = "Please fill E-mail & password to login your Shopy application account.";
+export const title_Pass = "New password";
+export const descr_Pass = "Your new password must be different from previously used passwords.";
+export const confirm_Pass = "Confirm password";
+export const pass_forgot = "Forgot password?";
+export const update_Pass = "Update";
+export const title_sucess = "Password reset successful";
+export const sucess_pass = "You have successfully reset your password. Please use your newpassword when logging in";
+export const log_pass = "Login";
