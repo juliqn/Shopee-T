@@ -323,18 +323,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     margin: SPACING.space_30,
     borderRadius: BORDERRADIUS.radius_20,
-    backgroundColor: COLORS.primaryDarkGreyHex,
+    backgroundColor: COLORS.primaryOrangeHex,
     alignItems: 'center',
   },
   InputIcon: {
     marginHorizontal: SPACING.space_20,
   },
-  TextInputContainer: {
+TextInputContainer: {
     flex: 1,
     height: SPACING.space_20 * 3,
     fontFamily: FONTFAMILY.poppins_medium,
     fontSize: FONTSIZE.size_14,
-    color: COLORS.primaryWhiteHex,
+    color: COLORS.primaryBlackHex,
   },
   CategoryScrollViewStyle: {
     paddingHorizontal: SPACING.space_20,

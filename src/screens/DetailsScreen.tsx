@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
   },
   SizeBox: {
     flex: 1,
-    backgroundColor: COLORS.primaryDarkGreyHex,
+    backgroundColor: COLORS.primaryBlackHex,
     alignItems: 'center',
     justifyContent: 'center',
     height: SPACING.space_24 * 2,
