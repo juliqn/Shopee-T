@@ -32,15 +32,10 @@ const App = () => {
           name="Payment"
           component={PaymentScreen}
           options={{animation: 'slide_from_bottom'}}></Stack.Screen>
-          {/* <Stack.Screen name={"Navigation"} component={NavigationTab}/> */}
         <Stack.Screen name={"Home"} component={ HomeScreen}/>
         <Stack.Screen name={"SingUp"} component={ SingUpScreen}/>
         <Stack.Screen name={"SingIn"} component={ SingInScreen }/>
-        {/* <Stack.Screen name={"Products"} component={Products}/> */}
         <Stack.Screen name={"Password"} component={PasswordScreen}/>
-        {/* <Stack.Screen name={"ProductDesc"} component={ProductsDescription}/> */}
-        {/* <Stack.Screen name={"Inventory"} component={LoadedProducts}/> */}
-        {/* <Stack.Screen name={"AddProduct"} component={AddProduct}/> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
