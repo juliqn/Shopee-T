@@ -120,7 +120,7 @@ const CartItem: React.FC<CartItemProps> = ({
         <LinearGradient
           start={{x: 0, y: 0}}
           end={{x: 1, y: 1}}
-          colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}
+          colors={[COLORS.primaryOrangeHex, COLORS.primaryBlackHex]}
           style={styles.CartItemSingleLinearGradient}>
           <View>
             <Image
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
   CartItemSubtitle: {
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_12,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
   CartItemRoastedContainer: {
     height: 50,
@@ -255,7 +255,7 @@ const styles = StyleSheet.create({
   },
   SizeText: {
     fontFamily: FONTFAMILY.poppins_medium,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
   SizeCurrency: {
     fontFamily: FONTFAMILY.poppins_semibold,

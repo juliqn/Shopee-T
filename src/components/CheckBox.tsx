@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import { TouchableOpacity, View, StyleSheet, Image } from 'react-native';
 import { check_min } from '../utils/Img';
-import { useNavigation } from '@react-navigation/native';
 
-const Checkbox = ({ checked, onChange }) => {
+
+
+const Checkbox = ({ checked, onChange }: { checked: boolean, onChange: (value: boolean) => void }) => {
   const [isChecked, setIsChecked] = useState(checked);
-  const navigation = useNavigation();
 
   const handlePress = () => {
     setIsChecked(!isChecked);
     onChange(!isChecked);
-    if (!isChecked) {
-        navigation.navigate('Password');
-    }
   };
 
+  
   return (
     <TouchableOpacity onPress={handlePress}>
       <View style={[styles.checkboxContainer, isChecked && styles.checked]}>
@@ -52,6 +50,9 @@ const styles = StyleSheet.create({
     width: 22,
     height: 22
   },
+  checked:{
+    borderWidth: 1
+  }
 });
 
 export default Checkbox;

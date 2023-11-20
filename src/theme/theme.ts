@@ -57,7 +57,7 @@ export const COLORS: Color = {
   secondaryGreyHex: '#252A32',
   primaryLightGreyHex: '#52555A',
   secondaryLightGreyHex: '#AEAEAE',
-  primaryWhiteHex: '#3E4958',
+  primaryWhiteHex: '#000000',
   primaryBlackRGBA: '#d5893775',
   secondaryBlackRGBA: 'rgba(0,0,0,0.7)',
 };

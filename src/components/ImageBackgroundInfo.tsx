@@ -72,7 +72,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               <GradientBGIcon
                 name="like"
                 color={
-                  favourite ? COLORS.primaryRedHex : COLORS.primaryLightGreyHex
+                  favourite ? '#DC3535' : '#DC3535'
                 }
                 size={FONTSIZE.size_16}
               />
@@ -109,7 +109,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                   <CustomIcon
                     name={type == 'Bean' ? 'bean' : 'beans'}
                     size={type == 'Bean' ? FONTSIZE.size_18 : FONTSIZE.size_24}
-                    color={COLORS.primaryOrangeHex}
+                    color={'#D17842'}
                   />
                   <Text
                     style={[
@@ -128,7 +128,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                   <CustomIcon
                     name={type == 'Bean' ? 'location' : 'drop'}
                     size={FONTSIZE.size_16}
-                    color={COLORS.primaryOrangeHex}
+                    color={'#D17842'}
                   />
                   <Text style={styles.PropertyTextLast}>{ingredients}</Text>
                 </View>
@@ -138,7 +138,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
               <View style={styles.RatingContainer}>
                 <CustomIcon
                   name={'star'}
-                  color={COLORS.primaryOrangeHex}
+                  color={'#D17842'}
                   size={FONTSIZE.size_20}
                 />
                 <Text style={styles.RatingText}>{average_rating}</Text>
@@ -192,12 +192,12 @@ const styles = StyleSheet.create({
   ItemTitleText: {
     fontFamily: FONTFAMILY.poppins_semibold,
     fontSize: FONTSIZE.size_24,
-    color: COLORS.primaryWhiteHex,
+    color: COLORS.primaryBlackHex,
   },
   ItemSubtitleText: {
     fontFamily: FONTFAMILY.poppins_medium,
     fontSize: FONTSIZE.size_12,
-    color: COLORS.primaryWhiteHex,
+    color: COLORS.primaryBlackHex,
   },
   ItemPropertiesContainer: {
     flexDirection: 'row',
@@ -231,12 +231,12 @@ const styles = StyleSheet.create({
   RatingText: {
     fontFamily: FONTFAMILY.poppins_semibold,
     fontSize: FONTSIZE.size_18,
-    color: COLORS.primaryWhiteHex,
+    color: COLORS.primaryBlackHex,
   },
   RatingCountText: {
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_12,
-    color: COLORS.primaryWhiteHex,
+    color: '#AEAEAE',
   },
   RoastedContainer: {
     height: 55,

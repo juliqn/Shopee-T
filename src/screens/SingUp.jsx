@@ -9,6 +9,7 @@ import ButtonImgComp from "../components/ButtonImg";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
 import { initializeApp} from 'firebase/app';
 import { firebaseConfig } from "../../firebase.config";
+import { FONTFAMILY } from "../theme/theme";
 
 
 export default function SingUpScreen(){
@@ -20,18 +21,18 @@ export default function SingUpScreen(){
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
 
-    const handleCreateAccount = () => {
-        createUserWithEmailAndPassword(auth, email1, password1)
-        .then((userCredential) => {
-            Alert.alert('Account created!')
-            const user = userCredential.user;
-            navigation.navigate("Home")
-            console.log(user)
-        })
-        .catch(error => {
-            Alert.alert(error.message)
-        })
-    }
+    // const handleCreateAccount = () => {
+    //     createUserWithEmailAndPassword(auth, email1, password1)
+    //     .then((userCredential) => {
+    //         Alert.alert('Account created!')
+    //         const user = userCredential.user;
+    //         navigation.navigate("Home")
+    //         console.log(user)
+    //     })
+    //     .catch(error => {
+    //         Alert.alert(error.message)
+    //     })
+    // }
 
     function goToBack() {
         navigation.goBack();
@@ -50,7 +51,7 @@ export default function SingUpScreen(){
                     <TextInput onChangeText={(text) => setEmail(text)} style={styles.inputSingUp}/>
                     <Text style={styles.title_input}>{password}</Text>
                     <TextInput onChangeText={(text) => setPassword(text)} style={styles.inputSingUp}/>
-                    <ButtonComp onPress={handleCreateAccount} buttonStyle={styles.btn_Up} textStyle={styles.text_Up} buttonText={btn_Up}/>
+                    <ButtonComp buttonStyle={styles.btn_Up} textStyle={styles.text_Up} buttonText={btn_Up}/>
                     <Text style={styles.text_social}>{info}</Text>
                 <View style={styles.containerDouble}>
                     <ButtonImgComp imgStyle={styles.icon_social} source={icon_facebook} onPress={goToBack} buttonStyle={styles.btn_social}/>
@@ -72,25 +73,29 @@ const styles = StyleSheet.create({
         borderRadius: 14, 
         borderWidth: 0.5,  
         backgroundColor: '#F7F8F9', 
-        height: 60
+        height: 60,
+        borderColor: '#d5dde0d6',
     },
     title_action:{
         color: color_gray, 
         fontSize: 24, 
         padding: 5, 
-        marginLeft: 15
+        marginLeft: 15,
+        fontFamily: FONTFAMILY.poppins_medium
     },
     title_input:{
         color: color_gray, 
         fontSize: 15, 
         paddingBottom: 8,
-        marginTop: 10
+        marginTop: 10,
+        fontFamily: FONTFAMILY.poppins_regular
     },
     textinput_init:{
         color: color_gray, 
         fontSize: 15, 
         paddingTop: 50, 
-        paddingBottom: 8
+        paddingBottom: 8,
+        fontFamily: FONTFAMILY.poppins_regular
     },
     containerDouble:{
         flexDirection: 'row'
@@ -114,19 +119,22 @@ const styles = StyleSheet.create({
         fontSize: 15, 
         paddingTop: 50, 
         paddingBottom: 30, 
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: FONTFAMILY.poppins_regular
     },
     text_Up:{
         color: color_white, 
-        fontSize: 18,
+        fontSize: 17,
         textAlign: 'center',
-        padding: 18
+        padding: 20,
+        fontFamily: FONTFAMILY.poppins_medium,
     },
     textFinal:{
         color: color_gray, 
         fontSize: 15,
         textAlign: 'center',
-        marginTop: 40
+        marginTop: 35,
+        fontFamily: FONTFAMILY.poppins_regular
     },
     icon_social:{
         alignSelf: 'center', 

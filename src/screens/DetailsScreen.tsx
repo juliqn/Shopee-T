@@ -122,7 +122,7 @@ const DetailsScreen = ({navigation, route}: any) => {
                     borderColor:
                       data.size == price.size
                         ? COLORS.primaryOrangeHex
-                        : COLORS.primaryDarkGreyHex,
+                        : COLORS.primaryBlackHex,
                   },
                 ]}>
                 <Text
@@ -135,8 +135,8 @@ const DetailsScreen = ({navigation, route}: any) => {
                           : FONTSIZE.size_16,
                       color:
                         data.size == price.size
-                          ? COLORS.primaryOrangeHex
-                          : COLORS.secondaryLightGreyHex,
+                          ? '#000000'
+                          : '#000000',
                     },
                   ]}>
                   {data.size}

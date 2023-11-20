@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   CardSubtitle: {
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_12,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
   CardCurrency: {
     fontFamily: FONTFAMILY.poppins_semibold,
@@ -137,11 +137,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRightWidth: 1,
-    borderRightColor: COLORS.primaryGreyHex,
+    borderRightColor: COLORS.primaryBlackHex,
   },
   SizeText: {
     fontFamily: FONTFAMILY.poppins_medium,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
   PriceBoxRight: {
     backgroundColor: COLORS.primaryBlackHex,
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderLeftWidth: 1,
-    borderLeftColor: COLORS.primaryGreyHex,
+    borderLeftColor: COLORS.primaryBlackHex,
   },
   PriceCurrency: {
     fontFamily: FONTFAMILY.poppins_semibold,

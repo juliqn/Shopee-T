@@ -3,6 +3,7 @@ import { View, StyleSheet, Text, TextInput } from 'react-native';
 import { arrow_back } from "../utils/Img";
 import ButtonImgComp from './ButtonImg';
 import { useNavigation } from '@react-navigation/native';
+import { FONTFAMILY } from '../theme/theme';
 
 
 export default function BaseScreen( props ){
@@ -39,7 +40,7 @@ export default function BaseScreen( props ){
                                 onSubmitEditing={handleSearch}
                             />
                         :
-                        <Text style={{ color: '#3E4958', fontSize: 24, paddingTop: 7, paddingHorizontal: 90 }}>{props.namePage}</Text>
+                        <Text style={{ color: '#3E4958', fontSize: 24, paddingTop: 7, paddingHorizontal: 80, fontFamily: FONTFAMILY.poppins_medium }}>{props.namePage}</Text>
                     }
                 </View>
             </View>

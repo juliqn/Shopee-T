@@ -59,8 +59,8 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
         <View style={styles.CardRatingContainer}>
           <CustomIcon
             name={'star'}
-            color={COLORS.primaryOrangeHex}
-            size={FONTSIZE.size_16}
+            color={'#000000'}
+            size={FONTSIZE.size_10}
           />
           <Text style={styles.CardRatingText}>{average_rating}</Text>
         </View>
@@ -87,7 +87,7 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
           <BGIcon
             color={COLORS.primaryWhiteHex}
             name={'add'}
-            BGColor={COLORS.primaryOrangeHex}
+            BGColor={COLORS.primaryBlackHex}
             size={FONTSIZE.size_10}
           />
         </TouchableOpacity>
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: SPACING.space_10,
-    paddingHorizontal: SPACING.space_15,
+    paddingHorizontal: SPACING.space_20,
     position: 'absolute',
     borderBottomLeftRadius: BORDERRADIUS.radius_20,
     borderTopRightRadius: BORDERRADIUS.radius_20,
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     fontFamily: FONTFAMILY.poppins_medium,
     color: COLORS.primaryWhiteHex,
     lineHeight: 22,
-    fontSize: FONTSIZE.size_14,
+    fontSize: FONTSIZE.size_12,
   },
   CardTitle: {
     fontFamily: FONTFAMILY.poppins_medium,
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
   },
   CardPriceCurrency: {
     fontFamily: FONTFAMILY.poppins_semibold,
-    color: COLORS.primaryOrangeHex,
+    color: COLORS.primaryWhiteHex,
     fontSize: FONTSIZE.size_18,
   },
   CardPrice: {

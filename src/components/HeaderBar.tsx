@@ -10,10 +10,10 @@ interface HeaderBarProps {
 
 const HeaderBar: React.FC<HeaderBarProps> = ({title}) => {
   return (
-    <View style={styles.HeaderContainer}>
+    <View style={{...styles.HeaderContainer}}>
       <GradientBGIcon
         name="menu"
-        color={COLORS.primaryLightGreyHex}
+        color={COLORS.primaryOrangeHex}
         size={FONTSIZE.size_16}
       />
       <Text style={styles.HeaderText}>{title}</Text>
