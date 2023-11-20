@@ -31,19 +31,19 @@ const PaymentMethod: React.FC<PaymentMethodProps> = ({
           borderColor:
             paymentMode == name
               ? COLORS.primaryOrangeHex
-              : COLORS.primaryGreyHex,
+              : COLORS.primaryOrangeHex,
         },
       ]}>
       {isIcon ? (
         <LinearGradient
           start={{x: 0, y: 0}}
           end={{x: 1, y: 1}}
-          colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}
+          colors={[COLORS.primaryOrangeHex, COLORS.primaryBlackHex]}
           style={styles.LinearGradientWallet}>
           <View style={styles.WalletRow}>
             <CustomIcon
               name={'wallet'}
-              color={COLORS.primaryOrangeHex}
+              color={COLORS.primaryBlackHex}
               size={FONTSIZE.size_30}
             />
             <Text style={styles.PaymentTitle}>{name}</Text>
@@ -54,7 +54,7 @@ const PaymentMethod: React.FC<PaymentMethodProps> = ({
         <LinearGradient
           start={{x: 0, y: 0}}
           end={{x: 1, y: 1}}
-          colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}
+          colors={[COLORS.primaryOrangeHex, COLORS.primaryBlackHex]}
           style={styles.LinearGradientRegular}>
           <Image source={icon} style={styles.PaymentImage} />
           <Text style={styles.PaymentTitle}>{name}</Text>
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   PaymentPrice: {
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_16,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
   PaymentImage: {
     height: SPACING.space_30,

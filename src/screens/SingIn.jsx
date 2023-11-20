@@ -10,6 +10,8 @@ import Checkbox from "../components/CheckBox";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
 import { initializeApp} from 'firebase/app';
 import { firebaseConfig } from "../../firebase.config";
+import { FONTFAMILY } from '../theme/theme';
+
 
 
 export default function SingInScreen(){
@@ -35,9 +37,9 @@ export default function SingInScreen(){
     //     })
     // }
 
-    // const handleCheckboxChange = (value) => {
-    //     setIsChecked(value);
-    // };
+    const handleCheckboxChange = (value) => {
+        setIsChecked(value);
+    };
 
     function sendsRecoveryPass(){
         navigation.navigate("Password")
@@ -49,7 +51,7 @@ export default function SingInScreen(){
     }
 
     function logIn(){
-        navigation.navigate("HomeScreen")
+        navigation.navigate('Navigation')
     }
     
     return(
@@ -59,7 +61,7 @@ export default function SingInScreen(){
                     <ButtonImgComp source={arrow_back} onPress={goToBack}/>
                     <Text style={styles.title_action}>Sign In</Text>
                 </View>
-                    <Text style={{ color: color_gray, fontSize: 15, marginVertical: 30}}>
+                    <Text style={{ color: color_gray, fontSize: 15, marginVertical: 25, fontFamily: FONTFAMILY.poppins_light}}>
                         Please fill E-mail & password to login your Shopy application account.
                     </Text>
                     <Text style={styles.title_input}>Email</Text>
@@ -67,10 +69,10 @@ export default function SingInScreen(){
                     <Text style={styles.title_input}>Password</Text>
                     <TextInput onChangeText={(text) => setPassword(text)} style={styles.inputSingUp}/>
                 <View style={styles.containerDouble}>
-                    <Checkbox checked={isChecked}/>
+                    <Checkbox checked={isChecked} onChange={handleCheckboxChange}/>
                     <Text style={styles.text_pass}>Forgot password?</Text>  
                 </View>
-                    <ButtonComp onPress={logIn()} buttonStyle={styles.btn_Up} textStyle={styles.text_Up} buttonText='Sign In'/>
+                    <ButtonComp onPress={logIn} buttonStyle={styles.btn_Up} textStyle={styles.text_Up} buttonText='Sign In'/>
                     <Text style={styles.text_social}>Or sign up with</Text>
                 <View style={styles.containerDouble}>
                     <ButtonImgComp imgStyle={styles.icon_social} source={icon_facebook} onPress={goToBack} buttonStyle={styles.btn_social}/>
@@ -89,6 +91,7 @@ const styles = StyleSheet.create({
     },
     inputSingUp:{
         borderWidth: 1, 
+        borderColor: '#d5dde0d6',
         borderRadius: 14, 
         backgroundColor: '#F7F8F9', 
         height: 60
@@ -97,13 +100,15 @@ const styles = StyleSheet.create({
         color: color_gray, 
         fontSize: 24, 
         padding: 5, 
-        marginLeft: 15
+        marginLeft: 15,
+        fontFamily: FONTFAMILY.poppins_medium
     },
     title_input:{
         color: color_gray, 
         fontSize: 15, 
         paddingBottom: 8,
-        marginTop: 10
+        marginTop: 10,
+        fontFamily: FONTFAMILY.poppins_regular
     },
     textinput_init:{
         color: color_gray, 
@@ -133,25 +138,29 @@ const styles = StyleSheet.create({
         fontSize: 15, 
         paddingTop: 50, 
         paddingBottom: 30, 
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: FONTFAMILY.poppins_regular
     },
     text_Up:{
         color: color_white, 
-        fontSize: 18,
+        fontSize: 17,
         textAlign: 'center',
-        padding: 18
+        fontFamily: FONTFAMILY.poppins_medium,
+        padding: 20
     },
     textFinal:{
         color: color_gray, 
-        fontSize: 15,
+        fontSize: 14,
         textAlign: 'center',
-        marginTop: 40
+        marginTop: 40,
+        fontFamily: FONTFAMILY.poppins_regular
     },
     text_pass:{
-        fontSize: 15, 
+        fontSize: 14, 
         color: color_gray, 
         paddingTop: 10, 
-        paddingLeft: 190
+        paddingLeft: 190,
+        fontFamily: FONTFAMILY.poppins_regular
     },
     icon_social:{
         alignSelf: 'center', 

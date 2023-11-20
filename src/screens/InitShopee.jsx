@@ -6,13 +6,15 @@ import { background_color_all, color_grandient, color_white } from '../utils/Col
 import { btn_In, btn_Up, title_home } from '../utils/Texts';
 import ButtonComp from '../components/Button';
 import { img_logo } from '../utils/Img';
+import { FONTFAMILY } from '../theme/theme';
 
 
-export default function HomeScreenView(){
+export default function ShopeeScreen(){
 
     const navigation = useNavigation();
 
     function sendsSingUp(){
+        console.log('ingresa a up');
         navigation.navigate("SingUp")
     }
 
@@ -39,7 +41,9 @@ const styles = StyleSheet.create({
     },
     textInitial:{
         textAlign: 'center',
-        fontSize: 17
+        fontSize: 17,
+        color: '#FFFFFF',
+        fontFamily: FONTFAMILY.poppins_regular
     },
     btn_Up:{
         backgroundColor: color_white, 
@@ -57,10 +61,12 @@ const styles = StyleSheet.create({
         color: background_color_all, 
         fontSize: 18,
         textAlign: 'center',
-        padding: 18
+        padding: 18,
+        fontFamily: FONTFAMILY.poppins_medium
     },
     text_In:{
         fontSize: 18,
-        color: color_white
+        color: color_white,
+        fontFamily: FONTFAMILY.poppins_medium
     }
 });

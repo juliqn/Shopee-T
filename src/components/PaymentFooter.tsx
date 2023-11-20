@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   PriceTitle: {
     fontFamily: FONTFAMILY.poppins_medium,
     fontSize: FONTSIZE.size_14,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
   PriceText: {
     fontFamily: FONTFAMILY.poppins_semibold,
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   ButtonText: {
     fontFamily: FONTFAMILY.poppins_semibold,
     fontSize: FONTSIZE.size_18,
-    color: COLORS.primaryBlackHex,
+    color: '#000000',
   },
 });
 

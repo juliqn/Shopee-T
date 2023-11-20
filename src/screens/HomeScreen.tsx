@@ -148,7 +148,7 @@ const HomeScreen = ({navigation}: any) => {
               color={
                 searchText.length > 0
                   ? COLORS.primaryOrangeHex
-                  : COLORS.primaryLightGreyHex
+                  : COLORS.primaryBlackHex
               }
             />
           </TouchableOpacity>
@@ -159,7 +159,7 @@ const HomeScreen = ({navigation}: any) => {
               setSearchText(text);
               searchCoffee(text);
             }}
-            placeholderTextColor={COLORS.primaryLightGreyHex}
+            placeholderTextColor={COLORS.primaryBlackHex}
             style={styles.TextInputContainer}
           />
           {searchText.length > 0 ? (
@@ -374,7 +374,7 @@ TextInputContainer: {
     marginLeft: SPACING.space_30,
     marginTop: SPACING.space_20,
     fontFamily: FONTFAMILY.poppins_medium,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
 });
 

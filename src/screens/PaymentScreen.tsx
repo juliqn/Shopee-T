@@ -116,12 +116,12 @@ const PaymentScreen = ({navigation, route}: any) => {
                   start={{x: 0, y: 0}}
                   end={{x: 1, y: 1}}
                   style={styles.LinearGradientStyle}
-                  colors={[COLORS.primaryGreyHex, COLORS.primaryBlackHex]}>
+                  colors={[COLORS.primaryOrangeHex, COLORS.primaryBlackHex]}>
                   <View style={styles.CreditCardRow}>
                     <CustomIcon
                       name="chip"
                       size={FONTSIZE.size_20 * 2}
-                      color={COLORS.primaryOrangeHex}
+                      color={COLORS.primaryBlackHex}
                     />
                     <CustomIcon
                       name="visa"
@@ -253,7 +253,7 @@ const styles = StyleSheet.create({
   CreditCardNameSubitle: {
     fontFamily: FONTFAMILY.poppins_regular,
     fontSize: FONTSIZE.size_12,
-    color: COLORS.secondaryLightGreyHex,
+    color: '#000000',
   },
   CreditCardNameTitle: {
     fontFamily: FONTFAMILY.poppins_medium,
